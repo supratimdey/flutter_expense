@@ -21,12 +21,12 @@ class NewTransaction extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           TextField(
-            decoration: InputDecoration(labelText: 'Title'),
+            decoration: const InputDecoration(labelText: 'Title'),
             controller: _titleController,
             focusNode: _titleFocus,
           ),
           TextField(
-            decoration: InputDecoration(labelText: 'Amount'),
+            decoration: const InputDecoration(labelText: 'Amount'),
             focusNode: _amtFocus,
             keyboardType: const TextInputType.numberWithOptions(decimal: true),
             inputFormatters: [
